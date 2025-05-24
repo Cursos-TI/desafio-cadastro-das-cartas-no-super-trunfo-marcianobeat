@@ -14,7 +14,7 @@ int main(){
     char cidade2[33];
 
 
-    printf("")
+    printf(" ____Jogo Super Trunfo____\n \n");
 
     printf("Digite sua cidade 01: \n");
     scanf("%s", &cidade);
@@ -49,6 +49,7 @@ int main(){
     printf("O número de pontos turísticos é de: \n \n");
     scanf("%d", &Nturistico2);
 
+    printf(" ____Jogo Super Trunfo____\n \n");
 
     printf(" Cidade 01:%s \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n \n", cidade, populacao, area, pib, Nturistico);
 
