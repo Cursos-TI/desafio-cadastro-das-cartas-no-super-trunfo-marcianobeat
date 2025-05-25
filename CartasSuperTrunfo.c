@@ -48,7 +48,7 @@ int main(){
     scanf("%f", &pib);
 
     printf("O número de pontos turísticos é de: \n");
-    scanf("%d", &Nturistico);
+    scanf("%d \n\n", &Nturistico);
 
 
 // carta 2
@@ -71,27 +71,27 @@ int main(){
     printf("O PIB é: \n");
     scanf("%f", &pib2);
 
-    printf("O número de pontos turísticos é de: \n \n");
-    scanf("%d", &Nturistico2);
+    printf("O número de pontos turísticos é de: \n");
+    scanf("%d \n \n", &Nturistico2);
 
     printf(" ____Jogo Super Trunfo____\n \n");
 
-    printf(" Cidade 01:%s \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n \n", cidade, populacao, area, pib, Nturistico);
+    printf(" Cidade 01:%s \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n Estado:%s \n Códico da carta:%s \n \n", cidade, populacao, area, pib, Nturistico, estado, codigo);
 
-    printf(" Cidade 02:%s \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n \n", cidade2, populacao2, area2, pib2, Nturistico2);
+    printf(" Cidade 02:%s \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n Estado:%s \n Códico da carta:%s \n \n", cidade2, populacao2, area2, pib2, Nturistico2, estado2, codigo2);
     
-    dencidadeP = populacao/area
-    capita_pib = pib/populacao
+    dencidadeP = populacao/area;
+    capita_pib = pib/populacao;
 
-    dencidadeP2 = populacao2/area2
-    capita_pib2 = pib2/populacao2
+    dencidadeP2 = populacao2/area2;
+    capita_pib2 = pib2/populacao2;
 
-    printf("Densidade Populacional da carta1 \n: %f", dencidadeP);
-    printf("PIB per Capita: %f \n", capita_pib);
+    printf("Densidade Populacional da carta1: %.2f \n", dencidadeP);
+    printf("PIB per Capita: %.2f \n \n", capita_pib);
 
-    printf("Densidade Populacional da carta2 \n: %f", dencidadeP2);
-    printf("PIB per Capita: %f \n", capita_pib2);
+    printf("Densidade Populacional da carta2: %.2f \n", dencidadeP2);
+    printf("PIB per Capita: %.2f \n \n", capita_pib2);
 
-     return 0;
+return 0;
 
 }
