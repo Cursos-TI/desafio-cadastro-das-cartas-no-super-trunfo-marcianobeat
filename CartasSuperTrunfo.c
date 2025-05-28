@@ -83,28 +83,30 @@ int main(){
     
     dencidadeP = populacao/area;
     capita_pib = pib/populacao;
-    float supertP = populacao + area + pib + Nturistico + capita_pib / dencidadeP;
+    float superP = populacao + area + pib + Nturistico + capita_pib / dencidadeP;
 
     dencidadeP2 = populacao2/area2;
     capita_pib2 = pib2/populacao2;
-    float supertP2 = populacao2 + area2 + pib2 + Nturistico2 + capita_pib2 / dencidadeP2;
+    float superP2 = populacao2 + area2 + pib2 + Nturistico2 + capita_pib2 / dencidadeP2;
 
+    int populacao3 = populacao > populacao2;
     float area3 = area > area2;
     float pib3 = pib > pib2;
     int Nturistico3 = Nturistico > Nturistico2;
     float capital_pib3 = capita_pib > capita_pib2;
     float dencidadeP3 = dencidadeP < dencidadeP2;
+    float superP3 = superP > superP2;
 
     printf("Densidade Populacional da carta1: %.2f \n", dencidadeP);
     printf("PIB per Capita: %.2f \n", capita_pib);
-    printf("Super Poder:%f\n \n", supertP);
+    printf("Super Poder:%f\n \n", superP);
 
     printf("Densidade Populacional da carta2: %.2f \n", dencidadeP2);
     printf("PIB per Capita: %.2f \n \n", capita_pib2);
-    printf("Super Poder:%f\n \n", supertP2);
+    printf("Super Poder:%f\n \n", superP2);
 
-    printf(" se for '1' ponta para cidade1 se for '0' ponto para cidade2 ");
+    printf(" se for '1' ponta para cidade1 se for '0' ponto para cidade2: \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n Densidade Populacional:%f \n PIB per Capita:%f\n Super Poder:%f \n \n", populacao3, area3, pib3, Nturistico3, , codigo);
 
-return 0;
+    return 0;
 
 }
