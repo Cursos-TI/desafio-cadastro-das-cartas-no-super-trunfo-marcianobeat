@@ -105,7 +105,7 @@ int main(){
     printf("PIB per Capita: %.2f \n \n", capita_pib2);
     printf("Super Poder:%f\n \n", superP2);
 
-    printf(" se for '1' ponta para cidade1 se for '0' ponto para cidade2: \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n Densidade Populacional:%f \n PIB per Capita:%f\n Super Poder:%f \n \n", populacao3, area3, pib3, Nturistico3, , codigo);
+    printf(" se for '1' ponta para cidade1 se for '0' ponto para cidade2: \n População:%d \n Área:%f \n PIB:%f \n Número de pontos turísticos:%d \n Densidade Populacional:%f \n PIB per Capita:%f\n Super Poder:%f \n \n", populacao3, area3, pib3, Nturistico3, dencidadeP3, capital_pib3,superP3);
 
     return 0;
 
