@@ -49,7 +49,7 @@ int main(){
     scanf("%f", &pib);
 
     printf("O número de pontos turísticos é de: \n");
-    scanf("%d \n\n", &Nturistico);
+    scanf("%d", &Nturistico);
 
 
 // carta 2
@@ -73,7 +73,7 @@ int main(){
     scanf("%f", &pib2);
 
     printf("O número de pontos turísticos é de: \n");
-    scanf("%d \n \n", &Nturistico2);
+    scanf("%d", &Nturistico2);
 
     printf(" ____Jogo Super Trunfo____\n \n");
 
@@ -88,6 +88,13 @@ int main(){
     dencidadeP2 = populacao2/area2;
     capita_pib2 = pib2/populacao2;
     float superP2 = populacao2 + area2 + pib2 + Nturistico2 + capita_pib2 / dencidadeP2;
+
+    if (superP > superP2){
+        printf("Carta 1 tem um Super poder maior!\n\n");
+    }
+    else{
+        printf("Carta 2 tem um Super poder maior!\n\n");
+    }
 
     int populacao3 = populacao > populacao2;
     float area3 = area > area2;
