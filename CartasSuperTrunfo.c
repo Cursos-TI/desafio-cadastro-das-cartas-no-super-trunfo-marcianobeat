@@ -24,7 +24,7 @@ int main(){
     float capita_pib2;
     float dencidadeP2;
 
-
+    int opicao;
 
 // carta 1
 
@@ -89,11 +89,70 @@ int main(){
     capita_pib2 = pib2/populacao2;
     float superP2 = populacao2 + area2 + pib2 + Nturistico2 + capita_pib2 / dencidadeP2;
 
-    if (superP > superP2){
-        printf("Carta 1 tem um Super poder maior!\n\n");
+    printf("Escolha o desafio:\n");
+    printf("1. População\n");
+    printf("2. Aria\n");
+    printf("3. PIB\n");
+    printf("4. Turismo\n");
+    printf("5. Super Poder\n");
+    scanf("%d", &opicao);
+
+    switch (opicao)
+    {
+    case 1:
+     if (populacao > populacao2){
+        printf("Carta 1 venceu!\n\n");
+    }
+    else if (populacao < populacao2){
+        printf("Carta 2 venceu!\n\n");
     }
     else{
-        printf("Carta 2 tem um Super poder maior!\n\n");
+        printf("Empate!");
+    }
+        break;
+case 2:
+     if (area > area2){
+        printf("Carta 1 venceu!\n\n");
+    }
+    else if (area < area2){
+        printf("Carta 2 venceu!\n\n");
+    }
+    else{
+        printf("Empate!");
+    }
+    case 3:
+     if (pib > pib2){
+        printf("Carta 1 venceu!\n\n");
+    }
+    else if (pib < pib2){
+        printf("Carta 2 venceu!\n\n");
+    }
+    else{
+        printf("Empate!");
+    }
+    case 4:
+     if (Nturistico > Nturistico2){
+        printf("Carta 1 venceu!\n\n");
+    }
+    else if (Nturistico < Nturistico2){
+        printf("Carta 2 venceu!\n\n");
+    }
+    else{
+        printf("Empate!");
+    }
+    case 5:
+     if (superP > superP2){
+        printf("Carta 1 venceu!\n\n");
+    }
+    else if (superP < superP2){
+        printf("Carta 2 venceu!\n\n");
+    }
+    else{
+        printf("Empate!");
+    }
+    default:
+    printf("Resposta invalida!");
+        break;
     }
 
     int populacao3 = populacao > populacao2;
